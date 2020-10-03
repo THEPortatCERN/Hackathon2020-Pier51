@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/team.css') }}" rel="stylesheet" type="text/css">
+
+    <title>Team | PIER 51!</title>
+</head>
+
+<body>
+    <section class="team">
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">We're the team behind Cardy!</p>
+                <hr class="my-4">
+                <p>Unlike every year, we met online, hacked through zoom meetings</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section>
+        <div class="container">
+            {% for name,role, img, about in team %}
+                <div class="row">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src={{img}} class="card-img" alt="#">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{name}}</h5>
+                                    <p class="card-text">{{about}}</p>
+                                    <p class="card-text"><small class="text-muted">{{role}}</small></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            {% endfor %}
+        </div>
+        </div>
+    </section>
+
+</body>
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-center mx-auto">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item">
+                        <a href="/team">Meet our Team</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; Made with love by Team Pier 51</p>
+            </div>
+        </div>
+    </div>
+</footer>
