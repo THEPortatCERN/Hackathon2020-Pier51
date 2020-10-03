@@ -1,0 +1,17 @@
+{
+    "team": [
+        {
+            "name": "Alberto Barbari",
+            "img": "http://theport.ch/theport2020/alberto-barbari.jpg",
+            "about":"Test",
+            "role":"Participant"
+        },
+        {
+            "name": "Alberto Barbari",
+            "img": "http://theport.ch/theport2020/alberto-barbari.jpg",
+            "about":"Test",
+            "role":"Participant"
+        }
+        
+    ]
+}
