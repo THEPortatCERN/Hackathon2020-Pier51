@@ -30,8 +30,14 @@ def team():
     about = [m["about"] for m in json_obj["team"]]
     return render_template("team.html",team=(zip(names,roles,imgs,about)))
 
+
 @app.route("/signup", methods=["GET"])
 def singup():
     return jsonify({
         "message":"under construction"
     })
+
+#@loginrequired
+@app.route("/dashboard", methods=["GET","POST"])
+def dashboard():
+    return render_template("dashboard.html")
