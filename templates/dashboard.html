@@ -4,31 +4,34 @@
 <script>
   function show_success(){
     document.getElementById("notification").style.display = "block";
+  };
+  function updated_profile(){
+    document.getElementById("update_profile").style.display = "block";
   }
 </script>
 <div class="container">
   <h1>Edit Profile</h1>
   <hr>
-  <div class="row">
+  <div class="row" id="stats" style="margin: 1em;">
     <!-- left column -->
     <div class="col-md-3">
       <div class="text-center">
-        <div class="row">
-          <span>Aloha ID:
+        <div class="row text-center">
+          <span><strong>Olana ID:</strong>
             <span id="id"></span>
           </span>
         </div>
-        <div class="row">
-          <span>Letters Sent: </span>
+        <div class="row text-center">
+          <span><strong>Letters Sent: </strong></span>
           <span id="nletters"></span>
         </div>
-        <div class="row">
-          <span>Matches till Date:
+        <div class="row text-center">
+          <span><strong>Matches till Date:</strong>
             <span id="nmatches"></span>
           </span>
         </div>
         <br>
-        <div class="row">
+        <div class="row text-center">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendcard"
             data-whatever="@getbootstrap">send a card </button>
           <div class="modal fade" id="sendcard" tabindex="-1" aria-labelledby="sendcard-modal"
@@ -36,7 +39,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="sendcard-modal">New message</h5>
+                  <h5 class="modal-title" id="sendcard-modal">New Postcard</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -45,7 +48,7 @@
                   <form>
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Match ID:</label>
-                      <input type="text" class="form-control" id="recipient-name" placeholder="#AL1234">
+                      <input type="text" class="form-control" id="recipient-name" placeholder="#AL1267">
                     </div>
                     <div class="form-group">
                       <label for="message-text" class="col-form-label">Message:</label>
@@ -66,7 +69,7 @@
 
     <!-- edit form column -->
     <div class="col-md-9 personal-info">
-      <div class="alert alert-info alert-dismissable">
+      <div class="alert alert-info alert-dismissable" id="update_profile" style="display: none;">
         <a class="panel-close close" data-dismiss="alert">×</a>
         <i class="fa fa-coffee"></i>
         Successfully updated the profile.
@@ -105,6 +108,12 @@
           </div>
         </div>
         <div class="form-group">
+          <label class="col-lg-3 control-label">Preferences</label>
+          <div class="col-lg-8">
+            <input class="form-control" type="text" value="Music,Loneliness,Cooking">
+          </div>
+        </div>
+        <div class="form-group">
           <label class="col-lg-3 control-label">Email:</label>
           <div class="col-lg-8">
             <input class="form-control" type="text" value="janesemail@gmail.com">
@@ -131,7 +140,7 @@
         <div class="form-group">
           <label class="col-md-3 control-label"></label>
           <div class="col-md-8">
-            <input type="button" class="btn btn-primary" value="Save Changes">
+            <input type="button" class="btn btn-primary" value="Save Changes" onclick="updated_profile()">
             <span></span>
             <input type="reset" class="btn btn-default" value="Cancel">
           </div>

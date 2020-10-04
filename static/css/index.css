@@ -38,6 +38,18 @@ header.masthead .overlay {
   opacity: 0.3;
 }
 
+
+.modal-title{
+  color: black;
+}
+
+.modal-body>#exampleInputEmail1{
+  color: black;
+}
+.masthead > a{
+  text-decoration: none;
+}
+
 header.masthead h1 {
   font-size: 3rem;
   line-height: 0.8;
@@ -120,4 +132,12 @@ footer.footer {
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;
+}
+
+.call-to-action>.modal-dialog{
+  font-color:black;
+}
+
+.modal-dialog>label{
+  font-color:black;
 }
