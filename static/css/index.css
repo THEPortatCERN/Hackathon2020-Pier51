@@ -87,18 +87,17 @@ header.masthead h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .call-to-action .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color:#adb5bd;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
 }
 
 footer.footer {
