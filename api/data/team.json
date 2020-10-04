@@ -3,15 +3,56 @@
         {
             "name": "Alberto Barbari",
             "img": "http://theport.ch/theport2020/alberto-barbari.jpg",
-            "about":"Test",
-            "role":"Participant"
+            "about": "Deeply dedicated in innovation and forecasting the future of food, Alberto is a food engineer graduated at University of Parma and currently employed as R&D technologist in Barilla. He experienced Human Centred Innovation for the first time applied to social innovation at Ideasquare (Cern) in Challenge based innovation Course and from that time he really fell in love with design thinking methodologies and their potential application. Alberto is definetely a Design ThinkER and surely a dreamer.",
+            "role": "Participant"
         },
         {
-            "name": "Alberto Barbari",
-            "img": "http://theport.ch/theport2020/alberto-barbari.jpg",
-            "about":"Test",
-            "role":"Participant"
+            "name": "Akanksha Ahuja (IN)",
+            "img": "http://theport.ch/theport2020/akanksha-ahuja.jpg",
+            "about": "Coming Soon",
+            "role": "Participant"
+        },
+        {
+            "name": "Abhishek Tiwari (IN)",
+            "img": "http://theport.ch/theport2020/abhishek-tiwari.jpg",
+            "about": "An optimist by nature who believes in adding values to the team by extracting significant information using analytics for effective decision making. Strong conceptual knowledge of Statistics and Mathematics wth a practical experience using different analytical tools.",
+            "role": "Participant"
+        },
+        {
+            "name": "Carolina De La Torre Ugarte (CH)",
+            "img": "http://theport.ch/theport2020/carolina-de-la-torre-ugarte.jpg",
+            "about": "Carolina is a social scientist with 4 years research experience and over 2 years in project management. She holds a BA in Psychology & Sociology from the University of Tennessee and a MA in Anthropology & Sociology from the Graduate Institute Geneva. In her work at GIST-T, she assessed/advocated for increased mental health services for aid workers. Her enthusiasm for inter/multi-disciplinary collaboration complements her commitment to human rights, especially of (ex-)individuals in detention.",
+            "role": "Participant"
+        },
+        {
+            "name": "El-Abbas Endaisha (LY)",
+            "img": "http://theport.ch/theport2020/el-abbas-endaisha.jpg",
+            "about": "Assistant Lecturer, Department of Physics, University of Misurata, I believe that physics can add a lot to our daily life and solve the problems and difficulties that we face.",
+            "role": "Participant"
+        },
+        {
+            "name": "Lorena Lobato Pardavila (ES)",
+            "img": "http://theport.ch/theport2020/lorena-lobato-pardavila.jpg",
+            "about": "After Lorena obtained her MS in Computer Engineering at the University of Vigo, she came to work at CERN in 2011 as a Computer Scientist. In 2018 she moved to Chicago, US to work at Fermi National Accelerator Laboratory where she works as a Computer Specialist while she’s pursuing an MS in Information Systems at DePaul University. She is a positive-thinking, adventurous, enthusiastic, and dynamic person. She is also passionate about music, psychology, traveling, books, and sport in general",
+            "role": "Participant"
+        },
+        {
+            "name": "Saketha Ramanujam",
+            "img": "https://avatars2.githubusercontent.com/u/18083969?s=460&u=4c52af961c4b31438f9848fe2c547e79382ddeaf&v=4",
+            "about": "I’m a research engineer here at Scientific and Industrial Research Centre, G.V.P., Vizag, India, working on modelling opto-electronic sensor data to give out insights about gases in air around us. I take joy in fiddling with computers to understand scientific data better, in all ways possible. I’m passionate about physics, particle and astro-physics in particular. Did I tell you that I play classical music and sing?",
+            "role": "Participant"
+        },
+        {
+            "name": "Nicolas Zanotti (US)",
+            "img": "http://theport.ch/theport2020/nicolas-zanotti.jpg",
+            "about": "Nicolas is a Software Engineer with a Master of Arts degree from the University of Middlesex, London. Since 2013, he has been contributing to the highly successful travel start-up GetYourGuide in Berlin and Zurich, where he held the position of Staff Front-End Engineer in the company’s Marketplace, Partnerships, and Responsible Tourism teams. Alongside his work, Nicolas teaches project management and web application development in the bachelor’s program of SAE Institute, Zurich. Nicolas appreciates beautiful design and code, and enjoys gardening, dogs, space opera, and travel.",
+            "role": "Coach"
+        },
+        {
+            "name": "Mark Melnykowycz (US)",
+            "img": "http://theport.ch/theport2020/mark-melnykowycz.jpg",
+            "about": "Mark is an artist-engineer working at the intersection of humanity and technology. He is currently helping to build the Internet of Humans at IDUN Technologies AG, where he develops neurotechnology products to enable empathy between humans and the connected world. Mark has enjoyed many hackathon adventures over the years, joining as a participant, coach, and technical advisor to previous Port hackathons. Mark also enjoys exploration of the Swiss mountains with a 360 camera and also delves into immersive worlds and storytelling.",
+            "role": "Coach"
         }
-        
     ]
 }
