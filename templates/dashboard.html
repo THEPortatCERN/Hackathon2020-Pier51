@@ -1,0 +1,153 @@
+{% extends 'base.html'%}
+{% block title %} Dashboard {% endblock %}
+{% block body %}
+<script>
+  function show_success(){
+    document.getElementById("notification").style.display = "block";
+  }
+</script>
+<div class="container">
+  <h1>Edit Profile</h1>
+  <hr>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-3">
+      <div class="text-center">
+        <div class="row">
+          <span>Aloha ID:
+            <span id="id"></span>
+          </span>
+        </div>
+        <div class="row">
+          <span>Letters Sent: </span>
+          <span id="nletters"></span>
+        </div>
+        <div class="row">
+          <span>Matches till Date:
+            <span id="nmatches"></span>
+          </span>
+        </div>
+        <br>
+        <div class="row">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendcard"
+            data-whatever="@getbootstrap">send a card </button>
+          <div class="modal fade" id="sendcard" tabindex="-1" aria-labelledby="sendcard-modal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="sendcard-modal">New message</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Match ID:</label>
+                      <input type="text" class="form-control" id="recipient-name" placeholder="#AL1234">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary" onclick="show_success()", data-dismiss="modal">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit form column -->
+    <div class="col-md-9 personal-info">
+      <div class="alert alert-info alert-dismissable">
+        <a class="panel-close close" data-dismiss="alert">×</a>
+        <i class="fa fa-coffee"></i>
+        Successfully updated the profile.
+      </div>
+      <div class="alert alert-success" id="notification" style="display: none;" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Well done!</strong> Your words of kindness are on their way
+      </div>
+      <h3>My Profile</h3>
+
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-lg-3 control-label">First name:</label>
+          <div class="col-lg-8">
+            <input class="form-control" type="text" value="Jane">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Last name:</label>
+          <div class="col-lg-8">
+            <input class="form-control" type="text" value="Bishop">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Address</label>
+          <div class="col-lg-8">
+            <input class="form-control" type="text" value="10 Downing Street, London, UK">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-8">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox" value="yes">
+            <label class="form-check-label" for="inlineCheckbox">I Consent to sharing my address with my match</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-8">
+            <input class="form-control" type="text" value="janesemail@gmail.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Username:</label>
+          <div class="col-md-8">
+            <input class="form-control" type="text" value="janeuser">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Password:</label>
+          <div class="col-md-8">
+            <input class="form-control" type="password" value="11111122333">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Confirm password:</label>
+          <div class="col-md-8">
+            <input class="form-control" type="password" value="11111122333">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input type="button" class="btn btn-primary" value="Save Changes">
+            <span></span>
+            <input type="reset" class="btn btn-default" value="Cancel">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<hr>
+<script>
+  let id = document.getElementById('id')
+  id.innerText = "AL" + Math.floor(Math.random() * 1000)
+  let nl = document.getElementById('nletters')
+  nl.innerText = Math.ceil(Math.random() * 10)
+  let nm = document.getElementById('nmatches')
+  nm.innerText = Math.round(Math.random() * 3)
+  
+</script>
+{% endblock %}
