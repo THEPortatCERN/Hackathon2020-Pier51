@@ -1,3 +1,9 @@
+:root {
+  --dark-brown:#3e3223;
+  --brown: #9c6123;
+  --light-brown: #e19a43;
+}
+
 body {
   font-family: "minion-pro-display";
   scroll-behavior: smooth;
@@ -19,25 +25,18 @@ h6 {
 
 header.masthead {
   position: relative;
-  background-color: #007bff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
+  background-color: var(--brown);
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  opacity: 0.3;
 }
-
 
 .modal-title{
   color: black;
