@@ -28,5 +28,10 @@ def team():
     roles = [m["role"] for m in json_obj["team"]]
     imgs = [m["img"] for m in json_obj["team"]]
     about = [m["about"] for m in json_obj["team"]]
-    return render_template("team.html",team=zip(names,roles,imgs,about))
+    return render_template("team.html",team=(zip(names,roles,imgs,about)))
 
+@app.route("/signup", methods=["GET"])
+def singup():
+    return jsonify({
+        "message":"under construction"
+    })
