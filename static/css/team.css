@@ -17,7 +17,70 @@ h6 {
   margin-right: 1.5em;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 1em;
+  text-align: center;
+
+}
+.card>h1,h2{
+  font-size: 12px;
+}
+.card>img{
+  padding: 1em;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.card:hover{
+  animation-name: card-hover;
+  animation-duration: 4s;
+}
+
+.role {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.team>.text-muted{
+  font-size: 2em;
+}
+
+@keyframes card-hover {
+  0%   {left:0px; top:0px;}
+  25%  {left:0px; top:2px;}
+  37.5% {left:0px; top:3px;}
+  50%  {left:0px; top:5px;}
+  67.5% {left:0px; top:3px;}
+  75%  {left:0px; top:2px;}
+  100% {left:0px; top:0px;}
 }
