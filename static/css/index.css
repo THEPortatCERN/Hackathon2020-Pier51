@@ -50,19 +50,12 @@ header.masthead h1 {
 }
 
 .showcase .showcase-text {
-  padding: 3rem;
+  font-size: 1.2rem;
+  margin-top: 1em;
 }
 
 .showcase .showcase-img {
   margin-top: 2em;
-  min-height: 30rem;
-  background-size: cover;
-}
-
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
 }
 
 .features-icons {

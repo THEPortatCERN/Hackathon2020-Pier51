@@ -8,6 +8,14 @@
     text-decoration: none;
 }
 
+.intro-btn {
+  border: 1px solid white;
+  padding: 0.4rem;
+}
+.intro-btn+.intro-btn {
+  margin-left: 1rem;
+}
+
 .blob-btn {
   z-index: 1;
   position: relative;
