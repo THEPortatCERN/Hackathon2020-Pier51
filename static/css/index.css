@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "minion-pro-display";
   scroll-behavior: smooth;
 }
 
@@ -9,10 +9,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "minion-pro-display";
   font-weight: 700;
 }
-
 
 .nav > a {
   text-decoration: none;
@@ -20,14 +19,13 @@ h6 {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("./img/bg-masthead.png") no-repeat center center;
+  background-color: #007bff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 header.masthead .overlay {
@@ -41,16 +39,13 @@ header.masthead .overlay {
 }
 
 header.masthead h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 0.8;
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
   header.masthead h1 {
-    font-size: 3rem;
+    font-size: 8rem;
   }
 }
 

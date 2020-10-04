@@ -5,105 +5,77 @@
 {% block title%}Olana Postcards{% endblock %}
 {% block body %}
 <header class="masthead text-white text-left">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-xl-9 mx-auto">
-        <h1 class="mb-5">Olana Postcards</h1>
-      </div>
-      <div class="col-md-6 col-xl-3 mx-auto">
-        <img class="img-fluid" src="/static/img/postcards.png" />
-      </div>
-      <br>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h1 class="intro">Olana Postcards</h1>
+                <h2></h2>
+            </div>
+            <div class="col-6 mx-auto">
+                <img class="img-fluid" src="/static/img/postcards.png" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="buttons col-12">
+                <a type="submit" href='/signup' class="blob-btn text-white">Try Now</a>
+                <a type="submit" href='#knowmore' class="blob-btn text-white">Know More</a>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="buttons col-md-3">
-        <a type="submit" href='/signup' class="blob-btn">
-          Try Now
-          <span class="blob-btn__inner">
-            <span class="blob-btn__blobs">
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
-            </span>
-          </span>
-        </a>
-      </div>
-      <div class="buttons col-md-3">
-        <a type="submit" , href='#showmore' class="blob-btn">
-          Know More
-          <span class="blob-btn__inner">
-            <span class="blob-btn__blobs">
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
-            </span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-  </form>
-  </div>
-  </div>
-
 </header>
 <section class="showcase" id="knowmore">
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-
-      <div class="col-lg-6 order-lg-2 text-white showcase-img show-inline">
-        <img src="https://hbr.org/resources/images/article_assets/2018/10/Oct22_18_862457080.png" width="80%">
-      </div>
-      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <h2>AI and Mental Health</h2>
-        <p class="lead mb-0">Why AI in mental health</p>
-      </div>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img show-inline">
+                <img src="https://hbr.org/resources/images/article_assets/2018/10/Oct22_18_862457080.png" width="80%">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>AI and Mental Health</h2>
+                <p class="lead mb-0">Why AI in mental health</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>use case 1</h2>
+                <p class="lead mb-0">Alecias use case and how it's going to help her?</p>
+            </div>
+            <div class="col-lg-6 order-lg-2 text-white showcase-img show-inline">
+                <img src="https://hbr.org/resources/images/article_assets/2018/10/Oct22_18_862457080.png" width="80%">
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img show-inline">
+                <img src="https://hbr.org/resources/images/article_assets/2018/10/Oct22_18_862457080.png" width="80%">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Use case 2</h2>
+                <p class="lead mb-0">Tortillas and Social Mingling</p>
+            </div>
+        </div>
     </div>
-    <div class="row no-gutters">
-
-      <div class="col-lg-6 my-auto showcase-text">
-        <h2>use case 1</h2>
-        <p class="lead mb-0">Alecias use case and how it's going to help her?</p>
-      </div>
-      <div class="col-lg-6 order-lg-2 text-white showcase-img show-inline">
-        <img src="https://hbr.org/resources/images/article_assets/2018/10/Oct22_18_862457080.png" width="80%">
-      </div>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-lg-6 order-lg-2 text-white showcase-img show-inline">
-        <img src="https://hbr.org/resources/images/article_assets/2018/10/Oct22_18_862457080.png" width="80%">
-      </div>
-      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-        <h2>Use case 2</h2>
-        <p class="lead mb-0">Tortillas and Social Mingling</p>
-      </div>
-    </div>
-  </div>
 </section>
 <!-- Call to Action -->
 <section class="call-to-action text-white text-center">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-9 mx-auto">
-        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-      </div>
-      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-        <form>
-          <div class="form-row">
-            <div class="col-12 col-md-9 mb-2 mb-md-0">
-              <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h2 class="mb-4">Ready to get started? Sign up now!</h2>
             </div>
-            <div class="col-12 col-md-3">
-              <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form>
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-          </div>
-        </form>
-      </div>
+        </div>
     </div>
-  </div>
 </section>
 {% endblock %}

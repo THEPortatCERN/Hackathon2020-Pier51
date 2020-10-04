@@ -1,0 +1,7 @@
+.blob-btn {
+  border: 1px solid white;
+  padding: 0.4rem;
+}
+.blob-btn+.blob-btn {
+  margin-left: 1rem;
+}
